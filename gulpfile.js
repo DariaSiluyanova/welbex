@@ -27,11 +27,6 @@ gulp.task('copyImages', function() {
     .pipe(gulp.dest('./dist/img/'))
 })
 
-gulp.task('fonts', function() {
-    return gulp.src('./src/fonts/**/*')
-    .pipe(gulp.dest('./dist/fonts/'))
-})
-
 //очистка папки dist
 gulp.task('clean', function(done) {
     if(fs.existsSync('./dist/')) {
@@ -55,13 +50,12 @@ gulp.task('watch', function() {
     gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass'));
     gulp.watch('./src/index.html', gulp.parallel('copyIndex'));
     gulp.watch('./src/img/**/*', gulp.parallel('copyImages'));
-    gulp.watch('./src/fonts/**/*', gulp.parallel('fonts'));
 })
 
 gulp.task('default', 
     gulp.series(
         'clean', 
-        gulp.parallel('sass', 'copyImages', 'copyIndex', 'fonts'),
+        gulp.parallel('sass', 'copyImages', 'copyIndex'),
         gulp.parallel('server', 'watch')
     )
 )

@@ -1,0 +1,22 @@
+.header {
+    padding: 1.667em 1.333em;
+    font-size: 1.2rem;
+    color: $main-font-color;
+    background-color: $bg_page;
+
+    @media (max-width: 320px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 90%;
+    }
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 320px) {
+        text-transform: uppercase;
+    }
+}

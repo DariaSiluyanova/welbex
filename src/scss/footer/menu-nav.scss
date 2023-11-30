@@ -1,0 +1,11 @@
+.menu-nav__list {
+    display: grid;
+    grid-template-columns: 40% auto;
+    gap: 0px 2.25em;
+}
+
+.menu-nav__item:last-child,
+.menu-nav__item:nth-last-child(-n+2) {
+    margin-bottom: 0;
+}
+

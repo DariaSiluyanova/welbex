@@ -1,0 +1,25 @@
+.footer {
+    padding: 3em 1.14em 4.28em 1.1em;
+    font-size: 1.4rem;
+    background-color: $bg_page;
+    color: $main-font-color;
+}
+
+.footer-title {
+    margin-bottom: 1.48em;
+    font-size: 0.91em;
+    color: $footer-title;
+    text-transform: uppercase;
+}
+
+.footer__section {
+    margin-bottom: 2.4em;
+}
+
+.info__item, .menu-nav__item {
+    margin-bottom: 0.77em;
+}
+
+.footer__contacts {
+    margin-bottom: 3.57em;
+}

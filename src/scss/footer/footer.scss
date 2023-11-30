@@ -1,8 +1,16 @@
 .footer {
-    padding: 3em 1.14em 4.28em 1.1em;
     font-size: 1.4rem;
-    background-color: $bg_page;
     color: $main-font-color;
+
+    @media (max-width: 320px) {
+        padding: 3em 1.14em 4.28em 1.1em;
+        background-color: $bg_page;
+    }
+
+    @media (width: 1440px) {
+        display: grid;
+        grid-template-columns: 15rem 19.7rem 50.6rem 13.2rem 31rem 15rem;
+    }
 }
 
 .footer-title {
@@ -22,4 +30,27 @@
 
 .footer__contacts {
     margin-bottom: 3.57em;
+
+    @media (width: 1440px) {
+        grid-column: 5/6;
+    }
+}
+
+.footer__copyright,
+.footer__confidentials {
+    @media (width: 1440px) {
+        grid-column: 5/6;
+    }
+}
+
+.footer__info {
+    @media (width: 1440px) {
+        grid-column: 2/3;
+    }
+}
+
+.footer__menu-nav {
+    @media (width: 1440px) {
+        grid-column: 3/4;
+    }
 }

@@ -1,6 +1,14 @@
 .consult__btn {
     @media (width: 1440px) {
         margin-top: 3.38em;
-        width: 262px;
+        margin-left: auto;
     }
+}
+
+
+.btn-get {
+    width: 262px;
+    height: 61px;
+    color: $main-font-color;
+    background-color: $bg_btn;
 }

@@ -42,6 +42,10 @@ html {
         background-image: url("/img/bg_desktop.png");
         background-size: cover;
     }
+
+    @media (width: 1440px) {
+        padding-bottom: 2rem;
+    }
 }
 
 .mobile {

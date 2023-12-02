@@ -1,0 +1,37 @@
+.header__contacts {
+    @media (width: 1440px) {
+        grid-column-start: 5;
+        grid-column-end: 6;
+    }
+}
+
+.header-data.data {
+    @media (width: 1440px) {
+        display: flex;
+    }
+}
+
+.header-data .soc {
+    @media (width: 1440px) {
+        padding: 0;
+    }
+}
+
+.header-data .soc .soc__item {
+    @media (width: 1440px) {
+        align-self: flex-start;
+        width: 1.25em;
+        height: 1.25em;
+        margin-right: 0;
+    }
+}
+
+.header-data .data__tel{
+    @media (width: 1440px) {
+        margin-right: 2.9375em;
+    }
+}
+
+.header-data .soc {
+    gap: 1.875em;
+}

@@ -1,0 +1,35 @@
+.header {
+    font-size: 1.2rem;
+    color: $main-font-color;
+
+    @media (max-width: 320px) {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 90%;
+        padding: 1.667em 1.333em;
+        background-color: $bg_page;
+    }
+
+    @media (width: 1440px) {
+        display: grid;
+        font-size: 1.6em;
+        grid-template-columns: 15rem 19.7rem 50.6rem 13.2rem 31rem 15rem;
+        padding-top: 2.875em;
+    }
+}
+
+.menu__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 320px) {
+        text-transform: uppercase;
+    }
+
+    @media (width: 1440px) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+}
+

@@ -1,0 +1,31 @@
+.main {
+    font-size: 1.8rem;
+    color: $main-font-color;
+
+    @media (max-width: 320px) {
+        background-image: url("/img/bg_mobile.png");
+        background-size: cover;
+        padding: 5.4em 1.8em 2.45em 0.78em;
+    }
+
+    @media (width: 1440px) {
+        display: grid;
+        grid-template-columns: 15rem 36.2rem 47.3rem 31rem 15rem;
+    }
+}
+
+.main__promo {
+    margin-bottom: 1.3em;
+}
+
+.main__promo {
+    @media (width: 1440px) {
+        grid-column: 2/3;
+    }
+}
+
+.main__consult {
+    @media (width: 1440px) {
+        grid-column: 4/5;
+    }
+}

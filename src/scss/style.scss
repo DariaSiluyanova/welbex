@@ -39,31 +39,28 @@ html {
     font-weight: $font-regular;
 
     @media (min-width: 321px) {
+        padding-bottom: 2rem;
         background-image: url("/img/bg_desktop.png");
         background-size: cover;
-    }
-
-    @media (width: 1440px) {
-        padding-bottom: 2rem;
     }
 }
 
 .mobile {
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         display: block;
     }
 
-    @media (min-width: 321px) {
+    @media (min-width: 781px) {
         display: none;
     }
 }
 
 .laptop {
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         display: none;
     }
 
-    @media (min-width: 321px) {
+    @media (min-width: 781px) {
         display: block;
     }
 }

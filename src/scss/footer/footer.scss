@@ -2,14 +2,14 @@
     font-size: 1.4rem;
     color: $main-font-color;
 
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         padding: 3em 1.14em 4.28em 1.1em;
         background-color: $bg_page;
     }
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         display: grid;
-        grid-template-columns: 15rem 19.7rem 50.6rem 13.2rem 31rem 15rem;
+        grid-template-columns: 1fr 13.68% 35.14% 9.17% 31rem 1fr;
     }
 }
 
@@ -31,26 +31,26 @@
 .footer__contacts {
     margin-bottom: 3.57em;
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 5/6;
     }
 }
 
 .footer__copyright,
 .footer__confidentials {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 5/6;
     }
 }
 
 .footer__info {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 2/3;
     }
 }
 
 .footer__menu-nav {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 3/4;
     }
 }

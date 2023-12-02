@@ -3,7 +3,7 @@
     font-family: $second-font;
     font-size: 0.85em;
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         text-align: end;
     }
 }

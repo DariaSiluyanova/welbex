@@ -2,8 +2,10 @@
     font-size: 1.143em;
 }
 
-.soc {
-    display: flex;
+.data__list.soc {
+    @media (min-width: 780px) {
+        display: flex;
+    }
 }
 
 .soc__item {
@@ -21,7 +23,7 @@
 }
 
 .footer__contacts.contacts {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         text-align: end;
     }
 }

@@ -1,5 +1,9 @@
 .tel {
     font-size: 1.143em;
+
+    @media (min-width: 780px) {
+        font-size: 1.2em;
+    }
 }
 
 .data__list.soc {
@@ -8,13 +12,23 @@
     }
 }
 
-.soc__item {
+.soc__item:not(:last-child) {
     align-self: center;
     margin-right: 0.714em;
 }
 
+.soc__item svg {
+    @media (min-width: 780px) {
+        width: 1.45em;
+    }
+}
+
 .data__item {
     margin-bottom: 0.5em;
+
+    @media (min-width: 780px) {
+        margin-bottom: 1.1em;
+    }
 }
 
 .data__list {
@@ -28,6 +42,20 @@
     }
 }
 
+.contacts .data .soc {
+    display: flex;
+}
+
 .footer__contacts.contacts .data .soc .soc__item:first-child {
     margin-left: auto;
+
+    @media (max-width: 779px) {
+        margin-left: 0;
+    }
+}
+
+.data__address {
+    @media (min-width: 780px) {
+        font-size: 1.16em
+    }
 }

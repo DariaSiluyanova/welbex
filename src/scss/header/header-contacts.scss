@@ -8,6 +8,7 @@
 .header-data.data {
     @media (min-width: 780px) {
         display: flex;
+        padding-top: 3px;
     }
 }
 
@@ -28,6 +29,7 @@
 
 .header-data .data__tel{
     @media (min-width: 780px) {
+        display: block;
         margin-right: 2.9375em;
     }
 }

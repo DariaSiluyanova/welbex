@@ -15,7 +15,13 @@
         display: grid;
         font-size: 1.6em;
         grid-template-columns: 1fr 13.68% 35.14% 9.17% 31rem 1fr;
-        padding-top: 2.875em;
+        padding-top: 3.55em;
+    }
+}
+
+.menu {
+    @media (min-width: 780px) {
+        padding-top: 0.25em;
     }
 }
 
@@ -38,3 +44,6 @@
     }
 }
 
+.menu__item {
+    margin-right: 1.95em;
+}

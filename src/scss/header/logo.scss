@@ -1,8 +1,9 @@
-.header__logo {
-    @media (min-width: 780px) {
+.header__logo.logo {
+    @media (min-width: 779px) {
+        display: block;
         grid-column-start: 2;
         grid-column-end: 3;
-        padding-right: 3.5em;
+        padding-right: 3.35em;
     }
 }
 

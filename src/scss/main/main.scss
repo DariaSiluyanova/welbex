@@ -10,8 +10,12 @@
 
     @media (min-width: 780px) {
         display: grid;
+        grid-template-columns: 1fr 32.13% 17.86% 31rem 1fr;
+        padding-bottom: 6.9em;
+    }
+
+    @media (min-width: 1200px) {
         grid-template-columns: 1fr 25.13% 32.86% 31rem 1fr;
-        padding-bottom: 3.83em;
     }
 }
 

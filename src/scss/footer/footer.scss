@@ -2,14 +2,14 @@
     font-size: 1.4rem;
     color: $main-font-color;
 
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         padding: 3em 1.14em 4.28em 1.1em;
         background-color: $bg_page;
     }
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         display: grid;
-        grid-template-columns: 15rem 19.7rem 50.6rem 13.2rem 31rem 15rem;
+        grid-template-columns: 1fr 20.5% 29.5% 29.6% 1fr;
     }
 }
 
@@ -18,6 +18,11 @@
     font-size: 0.91em;
     color: $footer-title;
     text-transform: uppercase;
+
+    @media (min-width: 780px) {
+        margin-bottom: 1.2em;
+        font-size: 1.1em;
+    }
 }
 
 .footer__section {
@@ -26,31 +31,37 @@
 
 .info__item, .menu-nav__item {
     margin-bottom: 0.77em;
+
+    @media (min-width: 780px) {
+        font-size: 1.14em;
+        margin-bottom: 0.65em;
+    }
 }
 
 .footer__contacts {
     margin-bottom: 3.57em;
 
-    @media (width: 1440px) {
-        grid-column: 5/6;
+    @media (min-width: 780px) {
+        grid-column: 4/5;
+        margin-bottom: 5.05em;
     }
 }
 
 .footer__copyright,
 .footer__confidentials {
-    @media (width: 1440px) {
-        grid-column: 5/6;
+    @media (min-width: 780px) {
+        grid-column: 4/5;
     }
 }
 
 .footer__info {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 2/3;
     }
 }
 
 .footer__menu-nav {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 3/4;
     }
 }

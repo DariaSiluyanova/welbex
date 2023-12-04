@@ -1,17 +1,25 @@
 .consult {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         text-align: end;
-        padding-top: 5.8333em;
+        padding-top: 6.15em;
     }
 }
 
 .consult__title, .consult {
     font-size: inherit;
+
+    @media (min-width: 780px) {
+        font-size: 1em;
+    }
 }
 
 .consult__title {
     margin-bottom: 1.12em;
     font-weight: $font-regular;
+
+    @media (min-width: 780px) {
+        margin-bottom: 2.35em;
+    }
 }
 
 .gift-container {
@@ -28,12 +36,12 @@
     font-weight: $font-regular;
     text-transform: uppercase;
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         font-family: $main-font;
         font-weight: $font-medium;
-        font-size: 0.889em;
+        font-size: 0.95em;
         padding-left: 0;
-        margin-bottom: 0.333em;
+        margin-bottom: 0.55em;
     }
 }
 
@@ -46,32 +54,44 @@
     height: 0.055em;
     background-image: linear-gradient(92deg, #FCB045 27.14%, #FF3F78 121.36%);
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         display: none;
     }
 }
 
 .gift {
     margin-bottom: 0.85em;
+
+    @media (min-width: 780px) {
+        margin-bottom: 1.7em;      
+    }
 }
 
 .gift__info {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         font-family: $second-font;
         font-size: 0.8889em;
     }
 }
 
 .item-vigets {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 1/2;
         grid-row: 1/2;
     }
 }
 
 .item-dashboard {
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column: 2/3;
         grid-row: 1/2;
+    }
+}
+
+.consult__free.title-accent {
+    text-transform: uppercase;
+
+    @media (min-width: 780px) {
+        letter-spacing: 1px;
     }
 }

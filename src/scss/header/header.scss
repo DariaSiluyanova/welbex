@@ -2,7 +2,7 @@
     font-size: 1.2rem;
     color: $main-font-color;
 
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         position: fixed;
         left: 0;
         top: 0;
@@ -11,11 +11,17 @@
         background-color: $bg_page;
     }
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         display: grid;
         font-size: 1.6em;
-        grid-template-columns: 15rem 19.7rem 50.6rem 13.2rem 31rem 15rem;
-        padding-top: 2.875em;
+        grid-template-columns: 1fr 13.68% 35.14% 9.17% 31rem 1fr;
+        padding-top: 3.55em;
+    }
+}
+
+.menu {
+    @media (min-width: 780px) {
+        padding-top: 0.25em;
     }
 }
 
@@ -23,13 +29,21 @@
     display: flex;
     justify-content: space-between;
 
-    @media (max-width: 320px) {
+    @media (max-width: 780px) {
         text-transform: uppercase;
     }
 
-    @media (width: 1440px) {
+    @media (min-width: 780px) {
         grid-column-start: 3;
         grid-column-end: 4;
     }
+
+    @media (min-width: 321px) and (max-width: 1200px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
+.menu__item {
+    margin-right: 1.95em;
+}

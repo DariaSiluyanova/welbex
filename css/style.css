@@ -268,7 +268,7 @@
 }
 @media (max-width: 780px) {
   .main {
-    background-image: url("img/bg_mobile.png");
+    background-image: url("../img/bg_mobile.png");
     background-size: cover;
     padding: 5.4em 1.8em 2.45em 0.78em;
   }
@@ -524,7 +524,7 @@ img {
 @media (min-width: 321px) {
   .body {
     padding-bottom: 2rem;
-    background-image: url("img/bg_desktop.png");
+    background-image: url("../img/bg_desktop.png");
     background-size: cover;
   }
 }
